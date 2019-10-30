@@ -3,7 +3,10 @@ Human Capital Management System ERP: Employees are valuable asset in organisatio
 
 Additionally, the system will keep a track of employees’ leaves and wouldn’t allow employee to apply for leave more than entitled. Lastly, the system will calculate the employee’s salary based on no of hours he/she worked. Also, system will display the pay stub if he/she wants.
   
-# Authors
+## Authors
+- Abhinandan Sharma(abhinandansharma3@cmail.carleton.ca)
+- Raghvendra Singh Rana(raghvendrarana@cmail.carleton.ca)
 
-Abhinandan Sharma
-Raghvendra Singh Rana
+## License
+
+## Acknowledgement
