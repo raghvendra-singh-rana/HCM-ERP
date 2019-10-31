@@ -2,10 +2,8 @@
 
 ## Installing the dependencies
 
-To install the software, you will first need to install the GNU Scientific Library. To do so, you must download
-the library. Fortunately, this is quite easy:
+GNU scientific library can be added/installed using below commands.
 
-```
 $ git submodule init
 $ git submodule update
 $ cd lib/gsl
