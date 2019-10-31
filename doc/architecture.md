@@ -9,7 +9,7 @@ PerfectSense
 │   README.md
 |   INSTALL.md
 |   LICENSE
-|   .gitignore
+|   .gitiggfcnore
 |   .gitmodules
 │   makefile
 |       
