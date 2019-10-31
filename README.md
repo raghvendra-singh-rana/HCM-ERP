@@ -50,4 +50,5 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 ## License
 ------
 ## Acknowledgement
+- Professor Christina Martin Ruiz for all her support and guidance.
 -------
