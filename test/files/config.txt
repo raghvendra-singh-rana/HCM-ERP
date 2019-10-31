@@ -1,0 +1,18 @@
+// CONFIGURATION FILE
+//
+// Parameters:
+// tolerance: The maximum fractional difference allowable for a sensor
+// cummulative_contribution: The maximum fractional difference allowable for a sensor
+// cummulative_contribution: The maximum fractional difference allowable for a sensor
+// min_allowable_value: The lower bound of the allowable values for a sensor
+// max_allowable_value: The upper bound of the allowable values for a sensor
+// max_stationary_time: Maximum number of minutes after which a sensor with identical measurements
+//                      is tagged as "stuck"
+//
+// IMPORTANT: Just change the values, do not change the variable names.
+//
+tolerance=0.7
+cummulative_contribution=0.85
+max_allowable_value=0
+min_allowable_value=100
+max_stationnary_time=60
