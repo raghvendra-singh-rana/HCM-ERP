@@ -13,7 +13,7 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 
 ### 2. build : This folder have build related documents.
 
--  build.txt
+-  Build.txt
  ---------------------------------
 
 ### 3. doc : This folder have documentation files of the project.
