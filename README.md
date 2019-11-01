@@ -7,7 +7,7 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 
 ### **1. bin :**   This folder have input file for the HCM ERP system.
 
-#### A. one input file :
+#### one input file :
  - Employee.txt
 ----------------------------------
 
