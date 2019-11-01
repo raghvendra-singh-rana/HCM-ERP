@@ -49,9 +49,7 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 
 ## License
 
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                         
 ------
 ## Acknowledgement
 - Professor Christina Martin Ruiz for all her support and guidance.
