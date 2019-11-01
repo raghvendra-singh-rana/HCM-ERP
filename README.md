@@ -5,13 +5,13 @@ Human Capital Management System ERP:  Employees are valuable asset in organisati
 Additionally, the system will keep a track of employees’ leaves and wouldn’t allow employee to apply for leave more than entitled. Lastly, the system will calculate the employee’s salary based on no of hours he/she worked. Also, system will display the pay stub if he/she wants.
 ## **File and Folder Structure Organization**
 
-### **1. data :**   This folder have input file for the HCM ERP system.
+### **1. bin :**   This folder have input file for the HCM ERP system.
 
 #### 1. one input file :
  - Employee.txt
 ----------------------------------
 
-### 2. doc : This folder have documentation files of the project.
+### 3. doc : This folder have documentation files of the project.
 
 -  Architecture.png
 -  Flow chart of HCM ERP.png
@@ -20,7 +20,7 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 
 ------------------------------------------------
 
-### 3. include : This folder have the all the header files used in the project. 
+### 4. include : This folder have the all the header files used in the project. 
 
 - Salary.h
 - Employee.h
@@ -29,7 +29,7 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 
 --------------------------------------
 
-### 4. src : This folder contains the source code for the message and top model.
+### 5. src : This folder contains the source code for the message and top model.
 
 
 - Employee.c
@@ -40,7 +40,10 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 
 -----------------------------------------------------------------
 
-### 5. test : This folder contains the unit test for the project.
+### 6. test : This folder contains the unit test for the project.
+
+- test_file1.csv
+
 -------------------------------------------
 ## Authors
 ----------
