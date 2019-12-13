@@ -1,5 +1,5 @@
-#ifndef CONSOLE_H
-#define CONSOLE_H
+#ifndef console_H
+#define console_H
 
 void gotoxy(int x,int y);
 
