@@ -12,7 +12,7 @@
 
 /* Function to approve leaves*/
 
-void approve_leave() {
+void approve_leave(int user) {
     int x, y; /* coordinates */
     FILE * fp; /* file pointer */
     long int recsize = sizeof(e);

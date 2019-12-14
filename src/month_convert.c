@@ -1,68 +1,57 @@
 /* Function to convert month*/
 
-char * month_convert(int cmon) {
-    char * smon;
+char* month_convert(int cmon) {
+
 
     switch (cmon) {
 
     case 1:
-        smon = "Jan";
-        return smon;
-        break;
+         return "Jan";
+         break;
 
     case 2:
-        smon = "Feb";
-        return smon;
+        return "Feburary";
         break;
 
     case 3:
-        smon = "Mar";
-        return smon;
-        break;
+       return   "March";
+       break;
 
     case 4:
-        smon = "Apr";
-        return smon;
-        break;
+        return   "April";
+       break;
 
     case 5:
-        smon = "May";
-        return smon;
-        break;
+        return   "May";
+       break;
 
     case 6:
-        smon = "Jun";
-        return smon;
-        break;
+        return   "June";
+       break;
 
     case 7:
-        smon = "Jul";
-        return smon;
-        break;
+        return   "July";
+       break;
 
     case 8:
-        smon = "Aug";
-        return smon;
+        return "August";
         break;
 
     case 9:
-        smon = "Sep";
-        return smon;
-        break;
+         return  "September";
+       break;
 
     case 10:
-        smon = "Oct";
-        return smon;
-        break;
+          return  "October";;
+       break;
 
     case 11:
-        smon = "Nov";
-        return smon;
-        break;
+         return  "November";;
+       break;
+
 
     case 12:
-        smon = "Dec";
-        return smon;
-        break;
+         return  "December";;
+       break;
     }
 }

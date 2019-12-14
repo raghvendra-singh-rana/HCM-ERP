@@ -21,7 +21,6 @@ void apply_leave(int user) {
     FILE * fp;
 
     system("cls");
-
     fp = fopen("EMP.DAT", "rb+");
     if (fp == NULL) {
         fp = fopen("EMP.DAT", "wb+");

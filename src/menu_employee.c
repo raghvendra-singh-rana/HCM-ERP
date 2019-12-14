@@ -4,6 +4,8 @@
 
 #include"../include/console.h"
 
+#include"../include/user_name.h"
+
 #include"../include/emp_structure.h"
 
 #include"../include/apply_leave.h"
@@ -44,15 +46,19 @@ void menu_employee(int user) {
         scanf("%c", & choice);
         switch (choice) {
         case '1':
+            printf("%d",user);
             apply_leave(user);
             break;
         case '2':
+            printf("%d",user);
             pay(user);
             break;
         case '3':
+            printf("%d",user);
             info(user);
             break;
         case '4':
+            printf("%d",user);
             new_pass(user);
             break;
         case '5':

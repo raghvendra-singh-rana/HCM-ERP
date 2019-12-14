@@ -10,7 +10,7 @@
 
 /* Function to check records of all employee */
 
-void list(void) {
+void list(int user) {
     system("cls");
     FILE * fp;
     fp = fopen("EMP.DAT", "rb+");
