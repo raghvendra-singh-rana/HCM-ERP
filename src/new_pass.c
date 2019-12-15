@@ -1,3 +1,5 @@
+/* This file is used to reset the password of employee in employee menu*/
+
 #include<stdio.h>
 #include<conio.h>
 #include"../include/emp_structure.h"
@@ -68,7 +70,7 @@ void new_pass(int user){
                 exit(1);
             }
         }
-        /* test code below */
+   
         fclose(fp);
         fp = fopen("EMP.DAT","rb+");
         if(fp == NULL){
@@ -79,7 +81,6 @@ void new_pass(int user){
             }
         }
 
-        // test code ends
         rewind(fp);
         while(fread(&e,recsize,1,fp)==1){
             if(e.id == user){
