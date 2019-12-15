@@ -16,6 +16,8 @@
 
 #include"../include/pay.h"
 
+#include"../include/pay_emp.h"
+
 #include<stdlib.h>
 
 #include<conio.h>
@@ -51,7 +53,7 @@ void menu_employee(int user) {
             break;
         case '2':
             printf("%d",user);
-            pay(user);
+            pay_emp(user);
             break;
         case '3':
             printf("%d",user);

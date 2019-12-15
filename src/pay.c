@@ -25,12 +25,10 @@ void pay(int user){
     user_name(user);
     month=time1();
 
-	gotoxy(7,0);
-    if (user == 1000000){
-
+	gotoxy(0,7);
 		printf("Enter the employee id : ");
         scanf("%d",&empid);
-		fp = fopen("EMP.DAT","rb+");
+		fp = fopen("EMP.DAT","rb");
         rewind(fp);
 		while(fread(&e,recsize,1,fp)==1){
 			  if(empid == e.id){
@@ -43,13 +41,11 @@ void pay(int user){
                              return;
                              }
 
-
-
 						   	else {
 							printf("\nDo you want to add works hours for employee ? Press y to confirm ");
 							choice =getche();
 							if ((choice== 'y') || (choice== 'Y')){
-								fs = fopen("SAL.DAT","w+");
+								fs = fopen("SAL.DAT","w");
 								printf("\n\nNo of hours worked: ");
 								scanf("%f",&whours);
 								s.id = empid;
@@ -57,14 +53,9 @@ void pay(int user){
 								s.mon = cmon;
 								s.hours = whours;
 								s.salary = whours * e.bs;
-								fwrite(&s,sizeof(s),1,fs);
+								fwrite(&s,recsizes,1,fs);
+								printf("\n\nSalary added for %d for month %d!",e.id,s.mon);
 								getch();
-								smon=month_convert(cmon);
-								printf("%s",month_convert(cmon));
-								printf("\n\nSalary aaded for %d for month %s!",e.id,smon);
-								getch();
-								getch();
-								fclose(fs);
 								break;
 								}
 							}
@@ -72,43 +63,8 @@ void pay(int user){
 							}
 
 							}
+							fclose(fp);
+							fclose(fs);
 							}
-	    else{
-        empid = user;
-        printf("User ID : %d",user);
-        printf("\n\nPlease enter the month in digits : ");
-        scanf("%d",&cmon);
-        if((cmon<1) || (cmon>month)){
-            printf("\nInvalid Month. Going back to main menu");
-            getch();
-            return;
-        }
-	fs = fopen("SAL.DAT","r");	
-	rewind(fs);
-    while(fread(&s,recsizes,1,fs)==1){
 
-        if((empid==s.id) &&(s.mon == cmon)){
-            count =1;
-            system("cls");
-            gotoxy(40,5);
-            printf("\"SYSC 5709 F Paystub\" ");
-            gotoxy(2,10);
-            printf("Employee Name: %s",s.name);
-            gotoxy(2,12);
-            printf("Employee ID: %d",s.id);
-            gotoxy(2,14);
-            printf("Number of Hours Worked: %f",s.hours);
-            gotoxy(17,16);
-            smon = month_convert(cmon);
-            printf("Month: %s",smon);
-            gotoxy(15,18);
-            printf("Net Pay: %.2f",s.salary);
-			fclose(fs);
-            getch();
-			getch();
-        }
-    }
-		
-		
-    }
-							}
+

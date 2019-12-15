@@ -11,9 +11,11 @@ void new_pass(int user){
     char pass[] = {'\0','\0','\0','\0','\0','\0','\0','\0','\0','\0',}; /* password */
     char npass[] = {'\0','\0','\0','\0','\0','\0','\0','\0','\0','\0',}; /* new password */
     FILE *fp; /* file pointer */
-    long int recsize; /* record size */
+    long int recsize=sizeof(e); /* record size */
     system("cls");
-    printf("Hello %sPlease enter your old password : ",e.name);
+    user_name(user);
+    gotoxy(0,7);
+    printf("Hello %s\n\nPlease enter your old password : ",e.name);
     for (i=0;i<10;i++){
         c=getch();
         if ((c== 13) ||(c == 10)||(c == 32)){
@@ -37,7 +39,7 @@ void new_pass(int user){
         for(i=0;i<=10;i++){
             pass[i] = '\0';
         }
-    printf("\nPlease enter your new password : ");
+    printf("\n\nPlease enter your new password : ");
     for (i=0;i<10;i++){
         c=getch();
         if ((c== 13) ||(c == 10)||(c == 32)){
@@ -81,10 +83,9 @@ void new_pass(int user){
         while(fread(&e,recsize,1,fp)==1){
             if(e.id == user){
                 strcpy(e.pass,npass);
-                fseek(fp,-recsize,SEEK_CUR); /// move the cursor 1 step back from current position
-                 fp = fopen("EMP.DAT","wb");
-                fwrite(&e,recsize,1,fp);///delete
-                 printf("\n\n%s",e.pass);
+                fseek(fp,-recsize,SEEK_CUR); /*move the cursor 1 step back from current position */
+                fp = fopen("EMP.DAT","wb");
+                fwrite(&e,recsize,1,fp);/* writting file */
                 printf("\n\nPassword successfully chnaged");
                 getch();
                 break;
@@ -93,12 +94,12 @@ void new_pass(int user){
         fclose(fp);
     }
     else{
-        printf("\nNew passwords are not matching");
+        printf("\n\nNew passwords are not matching");
         getch();
     }
     }
     else{
-        printf("\nWrong old password");
+        printf("\n\nWrong old password");
         getch();
     }
 }
