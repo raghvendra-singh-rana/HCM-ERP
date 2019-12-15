@@ -53,6 +53,7 @@ void pay(int user){
 								s.mon = cmon;
 								s.hours = whours;
 								s.salary = whours * e.bs;
+								fseek(fp, 0, SEEK_END);
 								fwrite(&s,recsizes,1,fs);
 								printf("\n\nSalary added for %d for month %d!",e.id,s.mon);
 								getch();

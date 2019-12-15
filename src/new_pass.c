@@ -4,6 +4,7 @@
 #include"../include/console.h"
 #include<stdlib.h>
 #include<string.h>
+#include"../include/user_name.h"
 
 void new_pass(int user){
     char c;
