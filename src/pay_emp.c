@@ -23,23 +23,21 @@ void pay_emp(int user){
     if((cmon==s.mon) && (s.id==user)){
         system("cls");
         gotoxy(40,5);
-                printf("\"SYSC 5709 F Paystub\" ");
-                gotoxy(2,10);
-                printf("Employee Name: %s",s.name);
-                gotoxy(2,12);
-                printf("Employee ID: %d",s.id);
-                gotoxy(2,14);
-                printf("Number of Hours Worked: %f",s.hours);
-                gotoxy(17,16);
-                printf("Month: %d",s.mon);
-                gotoxy(15,18);
-                printf("Net Pay: %.2f",s.salary);
-                getch();
-
-
+        printf("\"SYSC 5709 F Paystub\" ");
+        gotoxy(2,10);
+        printf("Employee Name: %s",s.name);
+        gotoxy(2,12);
+        printf("Employee ID: %d",s.id);
+        gotoxy(2,14);
+        printf("Number of Hours Worked: %f",s.hours);
+        gotoxy(17,16);
+        printf("Month: %d",s.mon);
+        gotoxy(15,18);
+        printf("Net Pay: %.2f",s.salary);
+        getch();
     }
     else{
-        printf("salary not generated");
+        printf("Salary not generated!!!");
         getch();
     }
 
