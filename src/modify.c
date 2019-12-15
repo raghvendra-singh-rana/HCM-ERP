@@ -6,15 +6,18 @@
 
 #include"../include/emp_structure.h"
 
+#include"../include/time1.h"
+
 #include<stdlib.h>
 
 #include<conio.h>
 
 #include<string.h>
 
+#include"../include/user_name.h"
 /* function to modify records */
 
-void modify() {
+void modify(int user) {
     int choice; /* option */
     char another;
     int error;
@@ -23,7 +26,6 @@ void modify() {
     int count = 0; /* checks for error code */
     int empid; /* Employee id */
     char tname[40]; /* Temporary name */
-
     another = 'y';
     while (another == 'y') {
         system("cls");
@@ -55,7 +57,7 @@ void modify() {
                 fflush(stdout);
                 fgets(tname, sizeof(e.name), stdin);
                 strcat(e.name, tname);
-                printf("\nEnter Designation(employee,manager : )");
+                printf("\nEnter Designation(employee,manager) :");
                 scanf("%s", & e.desig);
                 printf("\nEnter age: ");
                 scanf("%d", & e.age);

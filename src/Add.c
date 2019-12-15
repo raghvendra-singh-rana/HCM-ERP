@@ -2,6 +2,8 @@
 
 #include"../include/emp_structure.h"
 
+#include"../include/time1.h"
+
 #include<stdio.h>
 
 #include<conio.h>
@@ -16,7 +18,7 @@
 
 /* function to add a record of employee to database */
 
-void add() {
+void add(int user) {
     long int recsize = sizeof(e); /* record length */
     FILE * fp; /* file pointer for employee file */
     int error; /* error */
@@ -34,7 +36,7 @@ void add() {
         }
     }
 
-    
+
     system("cls"); /* clear screen */
     fseek(fp, 0, SEEK_END);
     another = 'y';

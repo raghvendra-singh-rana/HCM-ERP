@@ -14,11 +14,11 @@
 
 /* function to delete a employee record */
 
-void delete(void) {
+void delete(int user) {
     /* Variable */
     char another, choice; /* option */
     int count;
-    / *counter */
+    /*counter */
     int empid; /*Employee id */
     FILE * fp, * ft; /* file pointer */
     long int recsize = sizeof(e); /* size of record */

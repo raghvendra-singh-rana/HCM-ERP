@@ -10,6 +10,10 @@
 
 #include"../include/pay.h"
 
+#include"../include/user_name.h"
+
+#include"../include/time1.h"
+
 #include"../include/console.h"
 
 #include<stdio.h>
@@ -22,7 +26,7 @@ void menu_admin(int user) {
     /* clear the console window */
     char choice;
 
-    user = 1000000;
+    user = 1000000; /* Admin user */
 
     while (choice != '7') {
         system("cls");
@@ -50,21 +54,22 @@ void menu_admin(int user) {
         scanf("%c", & choice);
         switch (choice) {
         case '1':
-            add();
+            add(user);
             break;
         case '2':
-            list();
+            list(user);
             break;
         case '3':
-            modify();
+            modify(user);
             break;
         case '4':
-            delete();
+            delete(user);
             break;
         case '5':
-            approve_leave();
+            approve_leave(user);
             break;
         case '6':
+            printf("%d",user);
             pay(user);
             break;
         case '7':

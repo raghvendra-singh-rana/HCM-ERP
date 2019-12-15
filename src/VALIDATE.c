@@ -15,7 +15,7 @@
 int validate() {
     char *tempdesig[2]= {"employee","manager"};
     if (strcmp(e.name, "") == 0) {
-        gotoxy(0, 20);
+        gotoxy(0, 30);
         printf("Please enter valid employee name");
         getch();
         return 1;
@@ -23,7 +23,7 @@ int validate() {
 
     /* Validate designation */
     if ((strcmp(e.desig, tempdesig[0]) != 0) && (strcmp(e.desig, tempdesig[1]) != 0)) {
-        gotoxy(0, 20);
+        gotoxy(0, 30);
         printf("Please enter valid designation!");
         getch();
         return 1;
@@ -31,7 +31,7 @@ int validate() {
 
     /* Validate age */
     if ((e.age < 18) || (e.age > 120)) {
-        gotoxy(0, 20);
+        gotoxy(0, 30);
         printf("Please enter valid age");
         getch();
         return 1;

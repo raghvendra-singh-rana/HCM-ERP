@@ -18,6 +18,10 @@
 
 #include"../include/pay.h"
 
+#include"../include/menu_admin.h"
+
+#include"../include/time1.h"
+
 #include"../include/menu_employee.h"
 
 #include<stdlib.h>
