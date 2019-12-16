@@ -5,15 +5,35 @@ Human Capital Management System ERP:  Employees are valuable asset in organisati
 Additionally, the system will keep a track of employees’ leaves and wouldn’t allow employee to apply for leave more than entitled. Lastly, the system will calculate the employee’s salary based on no of hours he/she worked. Also, system will display the pay stub if he/she wants.
 ## **File and Folder Structure Organization**
 
-### **1. bin :**   This folder have input file for the HCM ERP system.
+### **1. bin :**   This folder have executable and data file for the HCM ERP system.
 
 #### one input file :
- - Employee.txt
+ - Employee.DAT
+ - Main.exe
+ - SAL.DAT
 ----------------------------------
 
-### 2. build : This folder have build related documents.
+### 2. build : This folder has all the object files generated using make file..
 
--  Build.txt
+-  add.o
+-  apply_leave.o
+-  approve_leave.o
+-  console.o
+-  delete.o
+-  info.o
+-  list.o
+-  login.o
+-  main.o
+-  menu_admin.o
+-  menu_employee.o
+-  modify.o
+-  month_convert.o
+-  new_pass.o
+-  pay.o
+-  pay_emp.o
+-  time1.o
+-  user_name.o.o
+-  validate.o
  ---------------------------------
 
 ### 3. doc : This folder have documentation files of the project.
@@ -27,21 +47,50 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 
 ### 4. include : This folder have the all the header files used in the project. 
 
-- Salary.h
-- Employee.h
-- File.h
-- Leave.h
-
+-  add.h
+-  apply_leave.h
+-  approve_leave.h
+-  console.h
+-  delete.h
+-  info.h
+-  list.h
+-  login.h
+-  main.h
+-  menu_admin.h
+-  menu_employee.h
+-  modify.h
+-  month_convert.h
+-  new_pass.h
+-  pay.h
+-  pay_emp.h
+-  time1.h
+-  user_name.h.h
+-  validate.h
+-  Emp_structure.h
+-  sal_structure.h
 --------------------------------------
 
 ### 5. src : This folder contains the source code for the message and top model.
 
-
-- Employee.c
-- File.c
-- Leave.c
-- Main.c
-- Salary.c
+-  add.c
+-  apply_leave.c
+-  approve_leave.c
+-  console.c
+-  delete.c
+-  info.c
+-  list.c
+-  login.c
+-  main.c
+-  menu_admin.c
+-  menu_employee.c
+-  modify.c
+-  month_convert.c
+-  new_pass.c
+-  pay.c
+-  pay_emp.c
+-  time1.c
+-  user_name.c.c
+-  validate.c
 
 -----------------------------------------------------------------
 
