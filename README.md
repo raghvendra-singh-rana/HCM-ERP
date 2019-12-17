@@ -40,8 +40,9 @@ Additionally, the system will keep a track of employees’ leaves and wouldn’t
 
 -  Architecture.png
 -  Flow chart of HCM ERP.png
--  Code_document.md
--  User_guide.md
+-  Software Design.pdf
+-  User Manualfor HCM.pdf
+-  Running HCM-ERP using GitBash
 
 ------------------------------------------------
 
