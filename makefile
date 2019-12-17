@@ -6,9 +6,7 @@ MCMODEL = -mcmodel=large
  $(shell mkdir -p bin)
  $(shell mkdir -p build)
 
-#TARGET TO COMPILE ALL THE TESTS TOGETHER (NOT SIMULATOR)
-
-#TARGET TO COMPILE EVERYTHING 
+#TARGET TO COMPILE ALL THE TESTS TOGETHER
 all: tests
 	
 tests: main.o login.o list.o console.o user_name.o validate.o modify.o delete.o apply_leave.o  approve_leave.o pay.o info.o new_pass.o menu_admin.o menu_employee.o month_convert.o add.o time1.o pay_emp.o
