@@ -19,4 +19,4 @@ struct sal
     };
     struct sal s;
 
-#endif /* end of salary.h */
+#endif /* end of sal_structure.h */
