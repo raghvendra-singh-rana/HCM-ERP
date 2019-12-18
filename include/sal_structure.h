@@ -1,3 +1,11 @@
+/** @file sal_structure.h
+ *  @brief Function prototypes for sal_structure
+ *
+ *  
+ * This header file is used to define the 
+ * structure of salary
+ *
+ */
 #ifndef sal_h
 #define sal_h
 
@@ -11,4 +19,4 @@ struct sal
     };
     struct sal s;
 
-#endif /* end of salary */
+#endif /* end of salary.h */
