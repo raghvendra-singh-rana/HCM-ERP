@@ -19,6 +19,6 @@ struct emp{
     float bs; /*  basic salary of employee */
     int lleaves; /* No of leaves */
     int aleaves; /* applied leaves */
-    }e;
+    }e;/* created a struct e of type emp */
 
 #endif /*EMP_STRUCTURE_H*/
