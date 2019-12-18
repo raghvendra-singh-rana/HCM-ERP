@@ -17,6 +17,6 @@ struct sal
         int mon; /* month*/
         float salary; /* salary for that month */
     };
-    struct sal s; /* sal_structure s instance*/
+    struct sal s; /* a variable of type sal */
 
 #endif /* end of sal_structure.h */
