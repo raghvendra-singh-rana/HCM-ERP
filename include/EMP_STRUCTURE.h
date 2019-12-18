@@ -1,3 +1,11 @@
+/** @file emp_structure.h
+ *  @brief Function prototypes for emp_structure
+ *
+ *  
+ * This header file is used to define 
+ *the structure of employee record 
+ *
+ */
 #ifndef EMP_STRUCTURE_H
 #define EMP_STRUCTURE_H
 
@@ -13,4 +21,4 @@ struct emp{
     int aleaves; /* applied leaves */
     }e;
 
-#endif //EMP_STRUCTURE_H
+#endif /*EMP_STRUCTURE_H*/
