@@ -7,9 +7,9 @@ MCMODEL = -mcmodel=large
  $(shell mkdir -p build)
 
 #TARGET TO COMPILE ALL THE TESTS TOGETHER
-all: tests
+all:HCM
 	
-tests: main.o login.o list.o console.o user_name.o validate.o modify.o delete.o apply_leave.o  approve_leave.o pay.o info.o new_pass.o menu_admin.o menu_employee.o month_convert.o add.o time1.o pay_emp.o
+HCM: main.o login.o list.o console.o user_name.o validate.o modify.o delete.o apply_leave.o  approve_leave.o pay.o info.o new_pass.o menu_admin.o menu_employee.o month_convert.o add.o time1.o pay_emp.o
 	$(CC) -g -o bin/MAIN build/main.o  build/login.o build/list.o build/console.o build/user_name.o build/validate.o build/modify.o build/delete.o build/apply_leave.o build/approve_leave.o build/pay.o build/info.o build/new_pass.o build/menu_admin.o build/menu_employee.o build/pay_emp.o build/month_convert.o build/add.o build/time1.o
 
 	
