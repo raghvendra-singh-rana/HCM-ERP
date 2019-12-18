@@ -3,7 +3,7 @@
  *
  *  
  * This header file is used to define 
- *the structure of employee record 
+ * the structure of employee record 
  *
  */
 #ifndef EMP_STRUCTURE_H
