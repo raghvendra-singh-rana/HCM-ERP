@@ -1,5 +1,5 @@
-/** @file admin_menu.h
- *  @brief Function prototypes for admin_menu
+/** @file menu_admin.h
+ *  @brief Function prototypes for menu_admin
  *
  *  
  * This header fileis used to show the 
