@@ -1,3 +1,16 @@
+
+/**
+ * @file ADD.c
+ * @brief This file is to add employee record to the emp.dat file.
+ *        It asks for valid information such as 1)name of employee
+ *        2)age 3)employee designation that can be employee or manager
+ *        and all the letters in desig should be in lower case. After
+ *        reading all the inputs the system checks if there is any wrong value
+ *        it will display an error message using valifate function.
+ *        Formatted output is present in "/bin/emp.DAT".
+ *        
+ *
+ */
 #include"../include/console.h"
 
 #include"../include/emp_structure.h"
