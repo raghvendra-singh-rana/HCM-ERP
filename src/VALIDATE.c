@@ -1,3 +1,9 @@
+/**
+ * @file VALIDATE.c
+ * @brief This file is used to verify the values entered by the 
+ *        user that is admin or employee and display apppropriate error message
+ *        in case of error
+ */
 #include<stdio.h>
 
 #include"../include/emp_structure.h"
