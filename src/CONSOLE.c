@@ -1,6 +1,10 @@
+/**
+ * @file Console.c
+ * @brief This file contains definition of
+ *        funtion to move the cursor to specific position       
+ *        on the screen   
+ */
 #include<windows.h>
-
-/* funtion to move the cursor to specific position */
 
 COORD coord = {0,0};
 void gotoxy(int x, int y) {
