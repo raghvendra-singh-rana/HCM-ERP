@@ -1,5 +1,5 @@
 /** @file apply_leave.h
- *  @brief Function prototypes for apply leave
+ *  @brief Function prototypes for apply leave by employees
  *
  *  
  * This function is used to apply leave for the 
